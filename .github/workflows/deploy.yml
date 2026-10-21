@@ -27,6 +27,6 @@ jobs:
       - name: Auditoria de Qualidade
         run: |
           test -f dist/index.html
-          test -f dist/sobre.html
+          test -f dist/quem-somos.html
           test -f dist/contato.html
           echo "Auditoria aprovada!"
