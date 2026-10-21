@@ -1,0 +1,32 @@
+name: Esteira de Entrega Profissional
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Criar pacote de distribuição
+        run: |
+          rm -rf dist
+          mkdir dist
+          cp *.html dist/
+          cp -r assets dist/
+          cp style.css dist/
+          echo "Conteúdo do pacote dist:"
+          ls -la dist
+          echo "Conteúdo da pasta assets:"
+          ls -la dist/assets
+
+      - name: Auditoria de Qualidade
+        run: |
+          test -f dist/index.html
+          test -f dist/sobre.html
+          test -f dist/contato.html
+          echo "Auditoria aprovada!"
