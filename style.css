@@ -5,15 +5,15 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #352b35;
-    background: #fff8fb;
+    color: #263746;
+    background: #f5faff;
     line-height: 1.6;
 }
 
 header {
     text-align: center;
     padding: 2rem 1rem 1.5rem;
-    background: #f5dce8;
+    background: #dcecf8;
 }
 
 header h1 {
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header p {
-    color: #746875;
+    color: #5e7385;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 }
 
 nav a {
-    color: #352b35;
+    color: #263746;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 0.9rem;
@@ -72,7 +72,7 @@ nav a:hover {
     margin-top: 0.8rem;
     padding: 0.75rem 1.1rem;
     border-radius: 10px;
-    background: #352b35;
+    background: #245b83;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -87,8 +87,8 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #f5dce8;
-    color: #746875;
+    background: #dcecf8;
+    color: #5e7385;
 }
 
 @media (max-width: 650px) {
